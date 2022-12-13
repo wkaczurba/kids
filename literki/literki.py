@@ -1,6 +1,9 @@
 # Importy bibliotek:
 from getch import getch
 import time
+import os
+# Depending on the OS - Windows or Linux - we pick getch (linux) or msvcrt.
+import keyboard
 from pygame import mixer
 from glob import glob
 
