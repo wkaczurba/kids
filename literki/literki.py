@@ -1,5 +1,6 @@
 # Importy bibliotek:
 # Depending on the OS - Windows or Linux - we pick getch (linux) or msvcrt.
+from pygame import mixer
 from getch import getch
 import time
 import os
@@ -63,4 +64,7 @@ def wypisz_pliki_audio():
 #    2. wypisz liste plikow audio
 #
 
-graj("a")
+#graj("a")
+
+klawisz = getch()
+print(f"Wcisnal(les/las) {klawisz}")
