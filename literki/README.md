@@ -1,3 +1,5 @@
+## Stuff for kids.
+
 ## Funkcje:
 
 - `wypisz_pliki_audio()` - wypisuje wszystkie pliki audio ktore sa
@@ -137,4 +139,49 @@
         klawisz = czytaj_klawisz().lower()
         graj(klawisz)
     ```
+
+21. Pelny kod:
+
+
+    ```python
+    import random
+
+    from funkcje import *
+
+    literki = ['a','b','c','d','e','f','g','h',
+            'i','j','k','l','m','n','o','p',
+            'q','r','s','t','u','w','x','y','z']
+
+    dobrze=0
+    zle=0
+
+    dzwieki_dobrze = ['dobrze','dobrze1',
+                'dobrze2','dobrze3','dobrze4',
+                'dobrze5','dobrze6','dobrze7','dobrze8']
+
+    for i in range(0, 2):
+        print(f"Proba nr: {i}")
+
+        losowa_literka = random.choice(literki)
+        print(f"Losowa literka: {losowa_literka}")
+
+        graj("wcisnij_literke")
+        graj(losowa_literka)
+        klawisz = czytaj_klawisz().lower()
+        
+        if (klawisz == losowa_literka):
+            losowe_dobrze = random.choice(dzwieki_dobrze)
+            graj(random.choice(dzwieki_dobrze))
+            dobrze+=1
+        else:
+            graj('zle')
+            zle+=1
+        # if
+        # graj(klawisz)
+
+    print("Wyniki:")
+    print(f"  dobrze: {dobrze}")
+    print(f"  zle: {zle}")
+    ```
+
 
