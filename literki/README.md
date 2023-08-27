@@ -1,5 +1,3 @@
-## Stuff for kids.
-
 ## Funkcje:
 
 - `wypisz_pliki_audio()` - wypisuje wszystkie pliki audio ktore sa
